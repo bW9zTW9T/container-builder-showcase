@@ -1,6 +1,6 @@
 FROM gcr.io/cloud-builders/go
-ENV GOPATH="/go"
+ENV GOPATH=/go
 COPY . /go/src/webserver
-RUN go install webserver
+RUN go get webserver
 ENTRYPOINT [ "./bin/webserver" ]
 EXPOSE 8080
