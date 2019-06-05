@@ -19,7 +19,7 @@ func main() {
 	// Method:   GET
 	// Resource: http://localhost:8080
 	app.Handle("GET", "/", func(ctx iris.Context) {
-		ctx.HTML("<h1>Welcome</h1>")
+		ctx.HTML("<h1>Hello MKT</h1>")
 	})
 
 	// same as app.Handle("GET", "/ping", [...])
